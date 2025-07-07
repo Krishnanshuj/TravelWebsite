@@ -264,6 +264,13 @@ img {
   align-items: center;
   gap: 5px;
 }
+.whatsapp-btn:visited,
+.whatsapp-btn:hover,
+.whatsapp-btn:focus,
+.whatsapp-btn:active {
+  color: #fff;
+  text-decoration: none;
+}
 
 .call-btn {
   background: #ffc107;
@@ -276,13 +283,6 @@ img {
   gap: 5px;
 }
 
-.whatsapp-btn:hover {
-  background: #128c7e;
-}
-
-.call-btn:hover {
-  background: #e0aa00;
-}
 
 
 .feature-container {
@@ -499,10 +499,15 @@ img {
   transition: background 0.3s ease;
  
 }
-
-.call-btn:hover {
-  background-color:  #e0aa00;
+.call-btn:visited,
+.call-btn:hover,
+.call-btn:focus,
+.call-btn:active {
+  color: white;
+  text-decoration: none;
 }
+
+
 
 
 .vehicle-card:hover {
@@ -894,11 +899,17 @@ img {
 
 /* Hide nav by default on mobile */
 .navbar {
+  width: 100%;
+  background: #ffc107;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav.nav-links {
